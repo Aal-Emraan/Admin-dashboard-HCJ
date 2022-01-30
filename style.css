@@ -535,3 +535,66 @@ main section.right .recent-transactions .card-details .card {
     height: 3rem;
     border-radius: var(--border-radius-2);
 }
+main section.right .recent-transactions .transaction .service .details {
+    width: 6rem;
+}
+/* ====================== Media Query for Tablet =================== */
+@media screen and (max-width: 1024px) {
+    nav .search-bar {
+        display: none;
+    }
+    nav .profile-area {
+        gap: 2rem;
+    }
+    nav .profile-area button#menu-btn {
+        display: inline;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    main aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--color-white);
+        width: 22rem;
+        height: 100vh;
+        box-shadow: 2rem 0 2rem var(--color-primary-light);
+        z-index: 3;
+        display: none;
+    }
+    main aside button#close-btn {
+        display: inline;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 4;
+        background: transparent;
+        color: var(--color-dark);
+    }
+    main aside button#close-btn:hover {
+        cursor: pointer;
+    }
+    main aside .sidebar {
+        margin-top: 4rem;
+    }
+    main aside .updates {
+        display: none;
+    }
+    main section.middle .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    main canvas {
+        margin: 3rem 0 1rem;
+    }
+    main section.right .recent-transactions {
+        margin-top: 3rem;
+    }
+}
+
+/* ================ Media query for Mobile =========== */
