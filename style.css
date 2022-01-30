@@ -444,6 +444,7 @@ canvas#chart {
     margin-top: 2rem;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
+    cursor: pointer;
 }
 
 /* ================ Investments ================ */
@@ -598,3 +599,22 @@ main section.right .recent-transactions .transaction .service .details {
 }
 
 /* ================ Media query for Mobile =========== */
+
+@media screen and (max-width: 600px) {
+    nav .profile-area {
+        gap: 2.6rem;
+    }
+    nav .profile h5,
+    nav .profile span {
+        display: none;
+    }
+    main section.middle .cards {
+        grid-template-columns: 1fr;
+    }
+    main section.middle .fast-payment {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3rem;
+        gap: 1.4rem;
+    }
+}
